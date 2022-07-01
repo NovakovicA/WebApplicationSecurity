@@ -1,0 +1,15 @@
+1. U Command Prompt-u preko "cd" komande uci u direktorijum csrf-exploit.
+
+2. Ukucati "npm start" u Command Prompt-u.
+
+3. Pokrenuti glavnu aplikaciju (localhost:8080) i ulogovati se kao bilo koji korisnik.
+
+4. Uci na stranicu localhost:3000 koja predstavlja napadacev sajt i kliknuti na pehar.
+
+5. Ukoliko se odradi refresh stranice localhost:8080 i udje na stranicu Users, moze da se vidi
+promena korisnickog imena i lozinke sa bruce:wayne na test:123
+
+NAPOMENA: index.html u okviru napadacevog sajta je implementiran na drugaciji nacin buduci da je Mozilla
+Firefox prijavljivao Cors problem iz nekog razloga (iako postoji CorsFilter u okviru aplikacije koji 
+dozvoljava CSRF sa localhost:3000) za kod sa vezbi (sa fetch metodom). Plugin-ovi za Mozillu kao sto su
+CORS Everywhere nisu pomogli pri tome, niti je pomogla izmena podesavanja u about:config.

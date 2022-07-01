@@ -1,0 +1,11 @@
+1. Ulogovati se kao bilo koji korisnik i uci na stranicu http://localhost:8080/order.
+
+2. U padajucem meniju izabrati bilo koji restoran.
+
+3. Izabrati bilo koju hranu za isporuku upisom broja veceg od 0 u amount deo.
+
+4. U okviru Additional Remark (komentara porudzbine) kopirati sledecu liniju:
+komentar'); INSERT INTO RESTAURANT VALUES((SELECT MAX(id)+1 FROM RESTAURANT),'TEST restoran', 'TEST adresa', 1); INSERT INTO FOOD VALUES ((SELECT MAX(id)+1 FROM FOOD),'TEST jelo',1337,3);--
+
+5. Ukoliko kliknemo na deliveries videcemo da postoji narudzbina koja je napravljena, a ukoliko odemo opet
+u tab za narucivanje mozemo da izaberemo novi restoran i novu hranu koju smo ubacili preko SQLi.
