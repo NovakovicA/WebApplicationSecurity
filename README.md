@@ -6,6 +6,8 @@ The assignment details are available in Serbian under the RBS_Projekat_2021_2022
 The application itself is implemented using Spring Framework and Maven. 
 The application uses H2 Java SQL Database for storing data about users, restaurants, orders, ordered items, deliveries etc.
 
+The project is packed within a ZIP archive (SecureSoftwareDevelopmentProject2021.zip) and was used within IntelliJ IDEA IDE.
+
 There are the following types of users:
   - customers
   - restaurants
